@@ -16,7 +16,7 @@
       <h1>Habilidades</h1>
       <div class="spell" v-for="spell in champ.spells" :key="spell.id">
         <img :src="getSpellContext(spell.id)" alt="" />
-        <p class="description">{{ spell.description }}</p>
+        <p class="description" v-html="spell.description"></p>
       </div>
     </div>
   </div>
